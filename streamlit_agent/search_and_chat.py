@@ -9,8 +9,8 @@ import streamlit as st  # Importing the Streamlit library for building the web a
 st.set_page_config(page_title="LangChain: Chat with search", page_icon="🦜")  # Setting the page configuration for the Streamlit app
 st.title("Hey, I am you new colleague. Do you have any research task? I am here to help")  # Adding a title to the Streamlit app
 
-#openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")  # Creating a text input field in the sidebar for the OpenAI API key
-st.write(header.jpeg)
+openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")  # Creating a text input field in the sidebar for the OpenAI API key
+st.write("header.jpeg")
 
 msgs = StreamlitChatMessageHistory()  # Creating an instance of the StreamlitChatMessageHistory class for storing chat messages
 memory = ConversationBufferMemory(  # Creating an instance of the ConversationBufferMemory class for storing conversation history
